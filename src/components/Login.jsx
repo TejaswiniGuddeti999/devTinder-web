@@ -9,6 +9,7 @@ export const Login = () => {
 
     const [emailId, setEmailId] = useState("vidheeshpoondru@gmail.com");
     const [password, setPassword] = useState("#Hanvik@15");
+    const [error, setError] = useState("");
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -25,7 +26,8 @@ export const Login = () => {
 
       }
       catch (err) {
-        console.error(err);
+        setError(err?.response?.data || "Something went wrong")
+        // console.error(err);
       }
     }
 
@@ -53,6 +55,7 @@ export const Login = () => {
               placeholder="Password" />
           </fieldset>
         </div>
+        <p className = "text-red-500">{error}</p>
         <div className="card-actions justify-center">
           <button className="btn btn-primary" onClick={handleLogin} >Login</button>
         </div>
@@ -61,3 +64,5 @@ export const Login = () => {
     </div>
   )
 }
+
+export default Login;
