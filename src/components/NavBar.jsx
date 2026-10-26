@@ -5,6 +5,7 @@ import { BASE_URL } from "../utils/constants";
 import axios from "axios";
 import  { removeUser } from "..//utils/userSlice"
 
+
 const NavBar = () => {
   const user = useSelector((store) => store.user)
   const dispatch = useDispatch();
@@ -52,11 +53,21 @@ const NavBar = () => {
             Connections
             <span className="badge">New</span>
           </Link>
-
         </li>
+
+        <li>
+          <Link to = "/requests" className="justify-between">
+            Requests
+            <span className="badge">New</span>
+          </Link>
+        </li>
+
+        
         <li>
            <a onClick={handleLogout}>Logout</a>
         </li>
+
+
 
 
       </ul>
