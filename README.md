@@ -1,20 +1,32 @@
-# DevTinder Web
+## DevTinder
 
-This is the frontend of DevTinder, a small app for developers to create a profile and connect with each other. I built it while following the Namaste Dev Node.js course. The backend is in a separate repo: https://github.com/TejaswiniGuddeti999/Dev-Tinder
+- Create a Vite + React application
+- Remove unnecessary code and create a Hello World app
+- Install Tailwind CSS
+- Install Daisy UI
+- Add NavBar component to App.jsx
+- Create a NavBar.jsx separate Component file
+- Install react router dom
+- Create BrowserRouter > Routes > Route= / Body > RouteChildren
+- Create an outlet in your body Component
+- Create a footer
+- Create a Login Page
+- Install axios
+- CORS - install cors in backend => add middleware to with configurations: origin, credentials: true
+- Whenever you're making API call so pass axios => {withCredentials:true}
+- install react-redux + @reducxjs/toolkit 
+- configureStore => Provider => createSlice => add reducer to store
+- Add redux devtools in chrome
+- Login and see if your data is coming properly in the store
+- NavBar should update as soon as user logs in
+- Refactor our code to add constants file + create a components folder
+- you should not be able to access other routes without login
+- If token is not present, redirect user to login page
+- Logout Feature
+- Get the feed and add the feed in the store
+- build the user card on feed
+- Edit Profile Feature
+- Show Toast Message on saveing the profile
+- New Page- See all my connections
+- New Page - See all my connection Requests
 
-## What I did
-
-- Set up the project with React, Tailwind CSS and daisyUI
-- Set up page navigation with React Router
-- Built the NavBar, which shows the user's name and photo, with Profile, Connections and Logout options
-- Built the Login page and connected it to the backend, so the user stays logged in even after refreshing the page
-- Used Redux to store the logged-in user, the feed and the connections in one place
-- Built the Feed, which shows other developers as cards
-- Built the Edit Profile page, which saves changes to the backend and shows a success message
-- Built the Connections page, which lists the people I'm connected with
-
-## Still to do
-
-- Connection requests page
-- Signup page
-- Deployment
