@@ -73,8 +73,18 @@ backend = http://3.27.95.229:3000/
 
 Domain name = devtinder.com => 3.27.95.229
 
+# Adding a custom domain name
+
+    - purchased ddomain name from godaddy
+    - signup on cloudflare & add a new domain name
+    - change the nameservers on godaddy and point it to cloudflare
+    - wait for sometime till the nameservers on godaddy are updated 
+
 Frontend = devtinder.com
 Backend - devtinder.com:7777 => devtinder.con/api
+
+
+
 
 
 
